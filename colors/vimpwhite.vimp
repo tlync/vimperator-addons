@@ -18,6 +18,7 @@ hi CompResult -append   font-family: "Lucida Grande", "Segoe UI", sans-serif !im
 hi CompDesc -append     font-family: "Lucida Grande", "Segoe UI", sans-serif; color: #666;
 hi Filter -append       border: none;
 hi CompTitle            -moz-appearance: statusbar; font-family: "Lucida Grande", "Segoe UI", monospace; font-weight: bold; text-indent: 5px; height: 20px;
+hi Tag:not(:empty)      color: #355D93; background-color: #E6F2FC; border-radius: 2px; padding: 1px 2px; font-size: 10px;
 
 " Hint
 hi HintElem             background-color: #fffac6; border-radius: 2px;
@@ -25,3 +26,6 @@ hi Hint                 font-family: "Lucida Grande", "Segoe UI", sans-serif; fo
 
 " for statusline-toolbar.js
 style -name toolbar-background chrome://* #liberator-customize-toolbar { padding-left: 5px !important; -moz-appearance: none !important; }
+
+" for sbmcommentviewer.js
+style -name sbmcommentviewer chrome://* .liberator-sbmcommentsviewer-content { border-color: #ccc !important; }
